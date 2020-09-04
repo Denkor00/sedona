@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-family: "PT Sans", "Arial", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	position: relative;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	outline: none;
+}
+
+// -------------------------------
+picture {
+	display: flex;
+}
+// -------------------------------

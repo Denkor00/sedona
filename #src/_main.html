@@ -1,0 +1,108 @@
+<main class="page">
+
+	<section class="welcome">
+		<ul class="welcome__images-list">
+			<li class="welcome__images-item"><img src="./img/Welcome.png" alt="Надпись Welcome"></li>
+			<li class="welcome__images-item"><img src="./img/geor.png" alt="Надпись to the gorgeous"></li>
+			<li class="welcome__images-item"><img src="./img/Sedona.png" alt="Надпись Sedona"></li>
+			<li class="welcome__images-item"><img src="./img/Because.png" alt="Надпись Because the Grand Canyon sucks!"></li>
+		</ul>
+		<img src="./img/ramka.png" alt="Рамка снизу">
+		<div class="welcome__description  _container">
+			<b>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</b>
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+		</div>
+	</section>
+
+	<section class="why">
+		<ul class="why__list _container">
+			<li class="why__list-item why__list-item_widht100 why__list-item_first">
+				<div>
+					<h2 class="why__title">Настоящий<br>городок</h2>
+					<p class="why__subtitle">— №1 —</p>
+					<p class="why__description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<img src="./img/img_1.png" alt="Город Седона">
+			</li>
+			<li class="why__list-item why__list-item_widht100">
+				<img src="./img/img_2.png" alt="Мост Дьявола">
+				<div>
+					<h2 class="why__title">Там есть<br>мост дьявола</h2>
+					<p class="why__subtitle">— №2 —</p>
+					<p class="why__description">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+				</div>
+			</li>
+			<li class="why__list-item">
+				<h2 class="why__title">Небольшая<br>площадь</h2>
+				<p class="why__subtitle">— №3 —</p>
+				<p class="why__description">Все достопримечательности находятся очень близко</p>
+			</li>
+			<li class="why__list-item">
+				<h2 class="why__title">Красивая<br>дорога</h2>
+				<p class="why__subtitle">— №4 —</p>
+				<p class="why__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+			</li>
+			<li class="why__list-item">
+				<h2 class="why__title">Мало<br>туристов</h2>
+				<p class="why__subtitle">— №5 —</p>
+				<p class="why__description">Большинство едет в Гранд Каньон и толпится там</p>
+			</li>
+			<ul class="list-privilege">
+				<li class="why__list-item list-privilege__item">
+					<b>Жилье</b>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</li>
+				<li class="why__list-item list-privilege__item">
+					<b>Еда</b>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</li>
+				<li class="why__list-item list-privilege__item">
+					<b>Сувениры</b>
+					<p>Не только Китайского, но и местного производства!</p>
+				</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section class="interested">
+		<div class="interested__block">
+			<div>
+				<b>Заинтересовались?</b>
+				<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			</div>
+			<button id="interested__button">Поиск гостиницы в седоне</button>
+			<section id="search" class="search search_active">
+				<form class="search__form" action="#" method="post">
+					<ul class="search__list">
+						<li class="search__item">
+							<label for="date_to">Дата заезда:</label>
+							<input id="date_to" type="text">
+						</li>
+						<li class="search__item">
+							<label for="date_from">Дата выезда:</label>
+							<input id="date_from" type="text">
+						</li>
+						<li class="search__item">
+							<p>
+								<label for="count_old">Взрослые:</label>
+								<button id="btn_old_minus" type="button" aria-label="Кнопка уменьшить количество взрослых" value="1"></button>
+								<input readonly id="count_old" type="number" value="2">
+								<button id="btn_old_plus" type="button" aria-label="Кнопка увеличить количество взрослых"></button>
+							</p>
+							<p>
+								<label for="count_young">Дети:</label>
+								<button id="btn_young_minus" type="button" aria-label="Кнопка уменьшить количество детей"></button>
+								<input readonly id="count_young" type="number" value="0">
+								<button id="btn_young_plus" type="button" aria-label="Кнопка увеличить количество детей"></button>
+							</p>
+						</li>
+					</ul>
+
+					<button type="submit">Найти</button>
+
+				</form>
+			</section>
+		</div>
+		<img src="./img/map.png" alt="Местоположение Седоны на карте">
+	</section>
+</main>

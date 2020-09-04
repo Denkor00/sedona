@@ -1,0 +1,100 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba($color: #fefefe, $alpha: .9);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 120px;
+	left: 0;
+
+	&__sharp,
+	&__list,
+	&__link-htmlAcademy {
+		min-width: 205px;
+		display: flex;
+		justify-content: center;
+	}
+	&__sharp {
+		font-size: 21px;
+		font-family: "PT Sans", "Arial", sans-serif;
+		color: #000;
+		font-weight: 700;
+	}
+
+	&__item {
+		min-height: 48px;
+		width: 46px;
+		
+		@for $i from 1 through 3 {
+			&:nth-child(#{$i}) {
+				a {
+					transition-duration: .3s;
+					background-color: #81b3d2;
+					background-image: url("../img/foot-#{$i}.svg");
+					background-position: center;
+					background-size: auto;
+					background-repeat: no-repeat;
+					
+					&:hover {
+						transition-duration: .3s;
+						background-color: #669ec0;
+					}
+					&:active {
+						transition-duration: .1s;
+						background-color: #5496bd;
+						background-image: url("../img/foot-active-#{$i}.svg");
+					}
+				}
+			}
+		}
+		margin: 0 6px 0 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__link {
+		display: block;
+		font-size: 0px;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__link-htmlAcademy {
+		position: relative;
+		height: 41px;
+		align-items: center;
+		justify-content: start;
+		font-size: 14px;
+		font-family: "PT Sans", "Arial", sans-serif;
+		color: #000;
+		line-height: 26px;
+		text-align: center;
+		padding: 0 0 0 5px;
+		&>svg {
+			position: absolute;
+			right: 10px;
+			top: 3px;
+			path {
+				transition-duration: .3s;
+			}
+		}
+		&:hover {
+			&>svg {
+				path {
+					transition-duration: .3s;
+					fill: #81b3d2;
+				}
+			}
+		}
+		&:active {
+			&>svg {
+				path {
+					transition-duration: .1s;
+					fill: #bdbbbc;
+				}
+			}
+		}
+	}
+}
